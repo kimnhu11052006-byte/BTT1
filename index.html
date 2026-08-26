@@ -1,66 +1,65 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Cafe Menu</title>
+    <title>Leonhard Euler</title>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
             background-color: white;
+            font-family: "Times New Roman", Times, serif;
         }
 
         .container {
-            width: 260px;
-            margin-left: 215px;
-            margin-top: 20px;
+            width: 800px;
+            margin: 20px auto;
             padding: 8px;
-            border: 1px solid #aaa;
-            box-shadow: 0 3px 8px #aaa;
+            border: 1px solid #6aa5d8;
+        }
+
+        .euler-image {
+            width: 695px;
+            height: 190px;
+            display: block;
+            object-fit: contain;
+            object-position: left top;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #999;
+            margin-top: 15px;
+            margin-bottom: 20px;
         }
 
         h1 {
-            font-family: Georgia, serif;
-            font-size: 20px;
+            font-size: 29px;
             margin-top: 0;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
-        h2 {
-            font-family: Georgia, serif;
-            font-size: 17px;
-            margin-top: 12px;
+        p {
+            font-size: 14px;
+            line-height: 1.15;
+            margin-top: 0;
+            margin-bottom: 14px;
         }
 
-        nav {
-            font-size: 12px;
-            margin-bottom: 10px;
+        .formula {
+            font-size: 14px;
+            margin-top: 16px;
+            margin-bottom: 16px;
         }
 
-        a {
-            color: #4b315c;
-        }
-
-        ul {
-            font-size: 12px;
-            padding-left: 28px;
-            margin-top: 8px;
-        }
-
-        li {
-            margin: 1px 0;
-        }
-
-        .back {
-            font-size: 11px;
-            margin-top: 10px;
-        }
-
-        .note {
-            font-size: 10px;
-            margin-top: 10px;
+        .footer {
+            font-style: italic;
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -69,65 +68,79 @@
 
     <div class="container">
 
+        <!-- Ảnh Leonhard Euler -->
+        <img src="euler.jpg" alt="Leonhard Euler" class="euler-image">
+
+        <hr>
+
         <!-- Tiêu đề -->
-        <h1 id="top">Example Cafe Menu</h1>
+        <h1>Leonhard Euler (1707-1783)</h1>
 
-        <!-- Menu điều hướng -->
-        <nav>
-            <a href="#starters">Starters</a> |
-            <a href="#main-courses">Main Courses</a> |
-            <a href="#desserts">Desserts</a>
-        </nav>
+        <!-- Đoạn văn 1 -->
+        <p>
+            The greatest mathematician of the eighteenth century,
+            <b>Leonhard Euler</b> was born in Basel, Switzerland.
+            There, he studied under another giant of mathematics,
+            <b>Jean Bernoulli</b>. In 1731 Euler became a professor of
+            physics and mathematics at St. Petersburg Academy of Sciences.
+            Euler was the most prolific mathematician of all time,
+            publishing over 800 different books and papers. His influence
+            was felt in physics and astronomy as well. Euler's work on
+            mathematical analysis,
+            <i>Introductio in analysin infinitorum</i> (1748) remained a
+            standard textbook for well over a century. Forerunner of
+            Analiticae sive, he wrote
+            <i>Lettres a une princesse d'Allemagne</i> (1768-1772),
+            giving a clear non-technical outline of the main physical
+            theories of the time.
+        </p>
 
-        <!-- Starters -->
-        <h2 id="starters">Starters</h2>
+        <!-- Đoạn văn 2 -->
+        <p>
+            One can hardly do math without copying Euler. Notations still
+            in use today, such as e and pi, were introduced in Euler's
+            writings. He is perhaps best known for his research into
+            mathematical analysis. Euler's formula
+        </p>
 
-        <ul>
-            <li>Chestnut and Mushroom Goujons (v)</li>
-            <li>Goat Cheese Salad (v)</li>
-            <li>Honey Soy Chicken Kebabs</li>
-            <li>Seafood Salad</li>
-        </ul>
+        <!-- Công thức 1 -->
+        <p class="formula">
+            cos(x) + i sin(x) = e<sup>ix</sup>
+        </p>
 
-        <div class="back">
-            <a href="#top">Back to top</a>
-        </div>
+        <!-- Đoạn văn 3 -->
+        <p>
+            demonstrates the relationship between algebra, complex analysis,
+            and trigonometry. From this equation, it's easy to derive the equation
+        </p>
 
-        <!-- Main courses -->
-        <h2 id="main-courses">Main courses</h2>
+        <!-- Công thức 2 -->
+        <p class="formula">
+            e<sup>i&pi;</sup> + 1 = 0
+        </p>
 
-        <ul>
-            <li>Spinach and Ricotta Roulade (v)</li>
-            <li>Beef Tournados with Mustard and Dill Sauce</li>
-            <li>Roast Chicken Salad</li>
-            <li>Icelandic Cod with Parsley Sauce</li>
-            <li>Mushroom Wellington (v)</li>
-        </ul>
+        <!-- Đoạn văn 4 -->
+        <p>
+            which relates the fundamental constants: 0, 1, &pi;, e, and i
+            in a single beautiful and elegant statement.
+        </p>
 
-        <div class="back">
-            <a href="#top">Back to top</a>
-        </div>
+        <!-- Đoạn cuối -->
+        <p>
+            Leonhard Euler died in 1783, leaving behind a legacy perhaps
+            unmatched, and certainly unsurpassed, in the annals of mathematics.
+        </p>
 
-        <!-- Desserts -->
-        <h2 id="desserts">Desserts</h2>
+        <hr>
 
-        <ul>
-            <li>Lemon Sorbet (v)</li>
-            <li>Chocolate Mud Pie (v)</li>
-            <li>Pecan Pie (v)</li>
-            <li>Selection of Fine Cheeses from Around the World</li>
-        </ul>
-
-        <div class="back">
-            <a href="#top">Back to top</a>
-        </div>
-
-        <!-- Ghi chú -->
-        <p class="note">
-            Items marked with a (v) are suitable for vegetarians.
+        <!-- Chân trang -->
+        <p class="footer">
+            Math 895: The History of Mathematics
         </p>
 
     </div>
 
 </body>
+
 </html>
+```
